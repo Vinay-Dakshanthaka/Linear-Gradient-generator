@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear-Gradient-Flipper</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            width:100vw;
+            height:100vh;
+            overflow: hidden;
+        }
+        .container{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            transform: translate(1vw,35vh);
+        }
+        h2{
+            text-align: center;
+        }
+       #submit{
+           border: 2px solid white;
+           color: #ffffff;
+           background-color: #000000;
+           /* border-radius: 5px; */
+           /* margin-left: 45vw;
+           margin-top:40vh; */
+          
+       }
+       button{
+            width:fit-content;
+            height:7%;
+            border: 5px solid #ffffff;
+            font-family:cursive ;
+            font-weight: bolder;
+            letter-spacing: 5px;
+            border-radius:15px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+       }
+    </style>
+</head>
+<body class="background">
+    <div class="container">
+        <div class="diplay-color">
+            <h2>BACKGROUND:  <span id="colorName">#</span></h2>
+        </div>
+    </div>
+        <button id="submit" onclick="changeColor()">CLICK</button>
+   
+        <script src="index.js"></script>
+</body>
+</html>
